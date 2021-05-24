@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerpic">
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:alpha="0.5"-->
+<!--        android:background="@color/black"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/indigo_daisy"
+            android:text="@string/register"
+            android:textAlignment="center"
+            android:textColor="@color/themeColor"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/tag"
+            android:textAlignment="center"
+            android:textColor="@color/themeColor"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/transparent_box"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="@string/your_name"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColorHint="@color/themeColor"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/transparent_box"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="@string/e_mail"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColorHint="@color/themeColor"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/transparent_box"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColorHint="@color/themeColor"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_repassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/transparent_box"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="@string/re_type_password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColorHint="@color/themeColor"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/custom_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/btn_custom"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/register"
+                android:textColor="@color/black" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_register"
+
+                android:layout_alignStart="@+id/btn_register"
+                android:layout_alignLeft="@+id/btn_register"
+                android:layout_alignEnd="@+id/btn_register"
+                android:layout_alignRight="@+id/btn_register"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp">
+
+                <Button
+                    android:id="@+id/btn_facebook"
+                    style="@style/custom_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_custom"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Facebook"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_google"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/btn_google" />
+
+                <Button
+                    android:id="@+id/btn_google"
+                    style="@style/custom_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/btn_facebook"
+                    android:background="@drawable/btn_custom"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Google"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#FF0000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_facebook"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/arrowLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/swipeLeft"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_arrow_left" />
+
+            <TextView
+                android:id="@+id/swipeLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/indigo_daisy"
+                android:text="@string/swipe_right_for_login"
+                android:textColor="@color/themeColor"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/arrowLeft"
+                android:background="@color/themeColor" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/registerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

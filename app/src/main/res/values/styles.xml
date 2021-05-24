@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="mySpinnerItemStyle"></style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--        <item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="custom_btn">
+        <item name="background">@drawable/btn_custom</item>
+        <item name="backgroundTint">@color/themeColor</item>
+    </style>
+    <style name="facebook_btn">
+        <item name="background">@drawable/btn_facebook</item>
+        <item name="backgroundTint">#0000FF</item>
+    </style>
+</resources>
