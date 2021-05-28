@@ -7,6 +7,8 @@ import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.bumptech.glide.Glide;
 import com.mindorks.placeholderview.SwipePlaceHolderView;
 import com.mindorks.placeholderview.annotations.Layout;
@@ -40,6 +42,7 @@ public class Card {
         mProfile = profile;
         mSwipeView = swipeView;
     }
+
 
     @SuppressLint("SetTextI18n")
     @Resolve
