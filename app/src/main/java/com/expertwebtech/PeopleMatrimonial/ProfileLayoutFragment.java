@@ -26,7 +26,7 @@ public class ProfileLayoutFragment extends Fragment {
                 .setRelativeScale(0.01f)
                 .setSwipeInMsgLayoutId(R.layout.swipe_in_msg_view)
                 .setSwipeOutMsgLayoutId(R.layout.swipe_out_msg_view));
-        for(Profile profile : Utils.loadProfiles(this.getContext())){
+        for(Profile profile : Utils.loadProfiles(getContext())){
             mSwipeView.addView(new Card(mContext, profile, mSwipeView));
         }
 

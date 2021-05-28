@@ -2,7 +2,7 @@ package com.expertwebtech.PeopleMatrimonial;
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.util.Log;
-import com.bumptech.glide.load.Key;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.io.IOException;
@@ -18,7 +18,7 @@ public class Utils {
         try{
             GsonBuilder builder = new GsonBuilder();
             Gson gson = builder.create();
-            JSONArray array = new JSONArray(loadJSONFromAsset(context, "profiles.json"));
+            JSONArray array = new JSONArray(loadJSONFromAsset(context));
             List<Profile> profileList = new ArrayList<>();
             for(int i=0;i<array.length();i++){
                 Profile profile = gson.fromJson(array.getString(i), Profile.class);
@@ -31,13 +31,13 @@ public class Utils {
         }
     }
 
-    private static String loadJSONFromAsset(Context context, String jsonFileName) {
+    private static String loadJSONFromAsset(Context context) {
         String json = null;
         InputStream is=null;
         try {
             AssetManager manager = context.getAssets();
-            Log.d(TAG,"path "+jsonFileName);
-            is = manager.open(jsonFileName);
+            Log.d(TAG,"path "+ "profiles.json");
+            is = manager.open("profiles.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);

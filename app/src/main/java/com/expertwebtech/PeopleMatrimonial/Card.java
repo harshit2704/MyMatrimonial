@@ -1,5 +1,6 @@
 package com.expertwebtech.PeopleMatrimonial;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.provider.ContactsContract;
 import android.util.Log;
@@ -17,7 +18,8 @@ import com.mindorks.placeholderview.annotations.swipe.SwipeInState;
 import com.mindorks.placeholderview.annotations.swipe.SwipeOut;
 import com.mindorks.placeholderview.annotations.swipe.SwipeOutState;
 
-@Layout(R.layout.fragment_profile_layout)
+@SuppressLint("NonConstantResourceId")
+@Layout(R.layout.profile_layout)
 public class Card {
 
     @View(R.id.profileImageView)
@@ -39,6 +41,7 @@ public class Card {
         mSwipeView = swipeView;
     }
 
+    @SuppressLint("SetTextI18n")
     @Resolve
     private void onResolved(){
         Glide.with(mContext).load(mProfile.getImageUrl()).into(profileImageView);
