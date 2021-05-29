@@ -4,18 +4,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:aapt="http://schemas.android.com/aapt"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/loginpic"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        android:background="@color/black"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:alpha="0.5"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/registerpic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:textSize="17sp"
