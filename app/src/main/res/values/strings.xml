@@ -8,8 +8,8 @@
     <string name="re_type_password">reType Password</string>
     <string name="register">Register</string>
     <string name="search_menu_title">Search</string>
-    <string name="swipe_left_for_register">Swipe Left To Register</string>
-    <string name="swipe_right_for_login">Swipe Left To Login</string>
+    <string name="swipe_left_to_login">Swipe Left To Login</string>
+    <string name="swipe_right_to_register">Swipe Right To Register</string>
     <string name="tag">Let\'s join us and\nBuild your relationship with others</string>
     <string name="textview">Thanks for Registering.Now let\'s build your Profile</string>
     <string name="your_name">Your Name</string>

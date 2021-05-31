@@ -15,13 +15,17 @@ public class Register extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View view=inflater.inflate(R.layout.fragment_register, container, false);
         button= view.findViewById(R.id.btn_register);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fragmentTransaction=getFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.registerFragment,new RegisterPage2());
+                container.removeAllViews();
+//                fragmentTransaction.replace(((ViewGroup)(getView().getParent())).getId(), new RegisterPage2());
+                fragmentTransaction.replace(R.id.registerFragment,new RegisterPage2(),null);
+                fragmentTransaction.setReorderingAllowed(true).addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });

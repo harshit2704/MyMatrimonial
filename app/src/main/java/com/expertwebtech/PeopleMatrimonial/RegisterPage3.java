@@ -12,6 +12,7 @@ public class RegisterPage3 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        container.removeAllViews();
         View view=inflater.inflate(R.layout.fragment_register_page3, container, false);
         return view;
     }
