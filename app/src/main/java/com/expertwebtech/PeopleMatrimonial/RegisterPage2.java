@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 public class RegisterPage2 extends Fragment {
+
     Button button;
 
     @Override
@@ -23,12 +24,15 @@ public class RegisterPage2 extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fragmentTransaction=getFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.registerFragment,new RegisterPage3(),null);
-                fragmentTransaction.setReorderingAllowed(true).addToBackStack(null);
+//                container.removeAllViews();
+//                fragmentTransaction.replace(((ViewGroup)(getView().getParent())).getId(), new RegisterPage2());
+                fragmentTransaction.replace(R.id.registerFragment,new RegisterPage3(),Register.registerStack);
+                fragmentTransaction.setReorderingAllowed(true).addToBackStack(Register.registerStack);
                 fragmentTransaction.commit();
 
             }
         });
+
 
 
         return view;

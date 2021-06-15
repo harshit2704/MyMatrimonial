@@ -7,10 +7,13 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.View;
 
 import java.util.ArrayList;
 
 public class LogSign extends AppCompatActivity {
+    private Fragment fragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,9 @@ public class LogSign extends AppCompatActivity {
             this.fragmentList.add(fragment);
         }
     }
+
+
+
     public void onBackPressed() {
         super.onBackPressed();
         finishAffinity();
