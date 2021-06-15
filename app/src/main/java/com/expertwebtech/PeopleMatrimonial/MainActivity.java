@@ -8,19 +8,19 @@ import android.view.View;
 import android.widget.RadioButton;
 
 public class MainActivity extends AppCompatActivity {
-    private RadioButton newPerson;
+    private RadioButton newJoin;
     public RadioButton yourProposal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        newPerson=findViewById(R.id.newPerson);
+        newJoin =findViewById(R.id.newPerson);
         yourProposal=findViewById(R.id.yourProposal);
         FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.homeFragment,new ProfileLayoutFragment());
         fragmentTransaction.commit();
-        newPerson.setOnClickListener(new View.OnClickListener() {
+        newJoin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
