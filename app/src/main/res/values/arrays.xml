@@ -65,7 +65,7 @@
         <item>November</item>
         <item>December</item>
     </string-array>
-    <string-array name="profileFor">
+    <string-array name="profileFor" >
         <item>Profile For</item>
         <item>Self</item>
         <item>Son</item>

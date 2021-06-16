@@ -1,5 +1,6 @@
 package com.expertwebtech.PeopleMatrimonial;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,11 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class RegisterPage3 extends Fragment {
     EditText otp_textbox_one, otp_textbox_two, otp_textbox_three, otp_textbox_four;
     Button verify_otp;
+    TextView AddItLater;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -27,6 +30,7 @@ public class RegisterPage3 extends Fragment {
         otp_textbox_three = view.findViewById(R.id.otp_edit_box3);
         otp_textbox_four = view.findViewById(R.id.otp_edit_box4);
         verify_otp = view.findViewById(R.id.verify_otp_btn);
+        AddItLater=view.findViewById(R.id.AddItLater);
         EditText[] edit = {otp_textbox_one, otp_textbox_two, otp_textbox_three, otp_textbox_four};
 
         otp_textbox_one.addTextChangedListener(new OTPTextWatcher(otp_textbox_one, edit));
@@ -38,6 +42,13 @@ public class RegisterPage3 extends Fragment {
             public void onClick(View view) {
                 Toast.makeText(getContext(), "OTP verified", Toast.LENGTH_SHORT).show();
 
+            }
+        });
+        AddItLater.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RegisterPage3.this.startActivity
+                        (new Intent(RegisterPage3.this.getContext(),MainActivity.class));
             }
         });
 

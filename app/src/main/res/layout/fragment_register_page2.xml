@@ -72,7 +72,7 @@
             android:padding="5dp" />
 
         <EditText
-            android:id="@+id/input_number"
+            android:id="@+id/mobile_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
@@ -80,7 +80,7 @@
             android:layout_marginEnd="60dp"
             android:background="@drawable/transparent_box"
             android:ems="10"
-            android:hint="Mobile Number"
+            android:hint="@string/mobile_number"
             android:inputType="number"
             android:padding="5dp"
             android:textColorHint="@color/themeColor" />
@@ -131,7 +131,7 @@
             android:clickable="false"
             android:ems="10"
             android:focusable="false"
-            android:hint="First Name"
+            android:hint="@string/first_name"
             android:inputType="textPersonName"
             android:padding="5dp"
             android:textColorHint="@color/themeColor" />
@@ -158,7 +158,7 @@
             android:clickable="false"
             android:ems="10"
             android:focusable="false"
-            android:hint="Last Name"
+            android:hint="@string/last_name"
             android:inputType="textPersonName"
             android:padding="5dp"
             android:textColorHint="@color/themeColor" />

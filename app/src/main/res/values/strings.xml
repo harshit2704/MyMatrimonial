@@ -1,20 +1,23 @@
 <resources>
     <string name="app_name">People Matrimonial</string>
-    <string name="e_mail">Enter Email</string>
+    <string name="e_mail"><b>Enter Email</b></string>
     <string name="find_your_life_partner">Find your Life\nPartner in 4 easy\nsteps!</string>
     <string name="login">Login</string>
-    <string name="password">Enter Password</string>
+    <string name="password"><b>Enter Password</b></string>
     <string name="privacyPolicy">By submitting you agree to our\nPrivacy Policy an T&amp;C.</string>
-    <string name="re_type_password">reType Password</string>
+    <string name="re_type_password"><b>reType Password</b></string>
     <string name="register">Register</string>
     <string name="search_menu_title">Search</string>
     <string name="swipe_left_to_login">Swipe Left To Login</string>
     <string name="swipe_right_to_register">Swipe Right To Register</string>
     <string name="tag">Let\'s join us and\nBuild your relationship with others</string>
     <string name="textview">Thanks for Registering.Now let\'s build your Profile</string>
-    <string name="your_name">Your Name</string>
+    <string name="your_name"><b>Your Name</b></string>
     <string name="create_your_free_profile">Create your\nfree Profile</string>
     <string name="view_profiles_as_nper_your_criteria">View Profiles as\nper your criteria</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mobile_number"><b>Mobile Number</b></string>
+    <string name="first_name"><b>First Name</b></string>
+    <string name="last_name"><b>Last Name</b></string>
 </resources>
