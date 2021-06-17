@@ -2,12 +2,9 @@ package com.expertwebtech.PeopleMatrimonial;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.provider.ContactsContract;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.mindorks.placeholderview.SwipePlaceHolderView;
@@ -33,13 +30,13 @@ public class Card {
     @View(R.id.locationNameTxt)
     private TextView locationNameTxt;
 
-    private Profile mProfile;
+    private ProfileLoader mProfileLoader;
     private Context mContext;
     private SwipePlaceHolderView mSwipeView;
 
-    public Card(Context context, Profile profile, SwipePlaceHolderView swipeView) {
+    public Card(Context context, ProfileLoader profileLoader, SwipePlaceHolderView swipeView) {
         mContext = context;
-        mProfile = profile;
+        mProfileLoader = profileLoader;
         mSwipeView = swipeView;
     }
 
@@ -47,9 +44,9 @@ public class Card {
     @SuppressLint("SetTextI18n")
     @Resolve
     private void onResolved(){
-        Glide.with(mContext).load(mProfile.getImageUrl()).into(profileImageView);
-        nameAgeTxt.setText(mProfile.getName() + ", " + mProfile.getAge());
-        locationNameTxt.setText(mProfile.getLocation());
+        Glide.with(mContext).load(mProfileLoader.getImageUrl()).into(profileImageView);
+        nameAgeTxt.setText(mProfileLoader.getName() + ", " + mProfileLoader.getAge());
+        locationNameTxt.setText(mProfileLoader.getLocation());
     }
 
     @SwipeOut

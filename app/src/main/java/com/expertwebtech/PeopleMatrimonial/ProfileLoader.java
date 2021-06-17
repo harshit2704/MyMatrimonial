@@ -3,7 +3,7 @@ package com.expertwebtech.PeopleMatrimonial;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Profile {
+public class ProfileLoader {
 
     @SerializedName("name")
     @Expose

@@ -14,17 +14,17 @@ public class Utils {
 
     private static final String TAG = "Utils";
 
-    public static List<Profile> loadProfiles(Context context){
+    public static List<ProfileLoader> loadProfiles(Context context){
         try{
             GsonBuilder builder = new GsonBuilder();
             Gson gson = builder.create();
             JSONArray array = new JSONArray(loadJSONFromAsset(context));
-            List<Profile> profileList = new ArrayList<>();
+            List<ProfileLoader> profileLoaderList = new ArrayList<>();
             for(int i=0;i<array.length();i++){
-                Profile profile = gson.fromJson(array.getString(i), Profile.class);
-                profileList.add(profile);
+                ProfileLoader profileLoader = gson.fromJson(array.getString(i), ProfileLoader.class);
+                profileLoaderList.add(profileLoader);
             }
-            return profileList;
+            return profileLoaderList;
         }catch (Exception e){
             e.printStackTrace();
             return null;

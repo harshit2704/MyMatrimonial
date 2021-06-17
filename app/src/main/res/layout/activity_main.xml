@@ -109,7 +109,7 @@
 
                     <RadioButton
                         android:gravity="center"
-                        android:id="@+id/radioButton4"
+                        android:id="@+id/yourProfile"
                         android:background="@drawable/tab_selector"
                         android:layout_width="120sp"
                         android:layout_height="wrap_content"

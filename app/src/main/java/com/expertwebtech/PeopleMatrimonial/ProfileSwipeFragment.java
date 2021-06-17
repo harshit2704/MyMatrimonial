@@ -12,13 +12,13 @@ import android.view.ViewGroup;
 import com.mindorks.placeholderview.SwipeDecor;
 import com.mindorks.placeholderview.SwipePlaceHolderView;
 
-public class ProfileLayoutFragment extends Fragment {
+public class ProfileSwipeFragment extends Fragment {
     private SwipePlaceHolderView mSwipeView;
     private Context mContext;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_profile_layout, container, false);
+        View view=inflater.inflate(R.layout.fragment_profile_swipe, container, false);
         mSwipeView=(SwipePlaceHolderView) view.findViewById(R.id.swipeView);
         mContext=getContext();
         mSwipeView.getBuilder().setDisplayViewCount(3)
@@ -26,8 +26,8 @@ public class ProfileLayoutFragment extends Fragment {
                 .setRelativeScale(0.01f)
                 .setSwipeInMsgLayoutId(R.layout.swipe_in_msg_view)
                 .setSwipeOutMsgLayoutId(R.layout.swipe_out_msg_view));
-        for(Profile profile : Utils.loadProfiles(getContext())){
-            mSwipeView.addView(new Card(mContext, profile, mSwipeView));
+        for(ProfileLoader profileLoader : Utils.loadProfiles(getContext())){
+            mSwipeView.addView(new Card(mContext, profileLoader, mSwipeView));
         }
 
         view.findViewById(R.id.rejectBtn).setOnClickListener(new View.OnClickListener() {

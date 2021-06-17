@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton newJoin;
     private RadioButton yourProposal;
     private RadioButton recentlyViewed;
+    private RadioButton yourProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +20,15 @@ public class MainActivity extends AppCompatActivity {
         newJoin =findViewById(R.id.newPerson);
         yourProposal=findViewById(R.id.yourProposal);
         recentlyViewed=findViewById(R.id.RecentlyViewed);
+        yourProfile=findViewById(R.id.yourProfile);
         FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.homeFragment,new ProfileLayoutFragment());
+        fragmentTransaction.replace(R.id.homeFragment,new ProfileSwipeFragment());
         fragmentTransaction.commit();
         newJoin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.homeFragment,new ProfileLayoutFragment());
+                fragmentTransaction.replace(R.id.homeFragment,new ProfileSwipeFragment());
                 fragmentTransaction.commit();
             }
         });
@@ -43,6 +45,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.homeFragment,new RecentlyViewedFragment());
+                fragmentTransaction.commit();
+            }
+        });
+        yourProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.homeFragment,new ProfileFragment());
                 fragmentTransaction.commit();
             }
         });
