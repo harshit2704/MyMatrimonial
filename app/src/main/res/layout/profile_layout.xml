@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="50dp">
+    android:layout_marginBottom="50dp"
+    android:orientation="vertical">
+
     <androidx.cardview.widget.CardView
-        android:orientation="vertical"
         android:id="@+id/cardView"
-        android:background="@color/white"
         android:layout_width="400dp"
         android:layout_height="475dp"
         android:layout_margin="20dp"
+        android:background="@color/white"
+        android:orientation="vertical"
         app:cardCornerRadius="7dp"
         app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,28 +25,31 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="75dp"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop" />
+
         <LinearLayout
-            android:gravity="left|center"
-            android:layout_gravity="bottom"
-            android:orientation="vertical"
-            android:paddingLeft="20dp"
             android:layout_width="match_parent"
-            android:layout_height="75dp">
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:gravity="left|center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
             <TextView
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"
                 android:id="@+id/nameAgeTxt"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:textSize="14dp"
-                android:textStyle="normal"
+                android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
                 android:id="@+id/locationNameTxt"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14dp"
+                android:textStyle="normal" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

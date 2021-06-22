@@ -68,7 +68,7 @@
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
             android:autofillHints="Select"
-            android:background="@drawable/transparent_box"
+            android:background="@drawable/circle"
             android:padding="5dp" />
 
         <EditText
@@ -78,7 +78,7 @@
             android:layout_marginStart="60dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="60dp"
-            android:background="@drawable/transparent_box"
+            android:background="@drawable/circle"
             android:ems="10"
             android:hint="@string/mobile_number"
             android:inputType="number"
@@ -105,7 +105,7 @@
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
             android:autofillHints="Select"
-            android:background="@drawable/transparent_box"
+            android:background="@drawable/circle"
             android:entries="@array/profileFor"
             android:padding="5dp" />
 
@@ -127,7 +127,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
-            android:background="@drawable/transparent_box"
+            android:background="@drawable/circle"
             android:clickable="false"
             android:ems="10"
             android:focusable="false"
@@ -154,7 +154,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
-            android:background="@drawable/transparent_box"
+            android:background="@drawable/circle"
             android:clickable="false"
             android:ems="10"
             android:focusable="false"
@@ -182,7 +182,7 @@
             android:layout_height="33dp"
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
-            android:background="@drawable/transparent_box"
+            android:background="@drawable/circle"
             android:entries="@array/gender"
             android:padding="5dp" />
 
@@ -211,7 +211,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="33dp"
                 android:layout_weight="1"
-                android:background="@drawable/transparent_box"
+                android:background="@drawable/circle"
                 android:entries="@array/day"
                 android:padding="5dp" />
 
@@ -221,7 +221,7 @@
                 android:layout_height="33dp"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/transparent_box"
+                android:background="@drawable/circle"
                 android:entries="@array/month"
                 android:padding="5dp" />
 
@@ -231,7 +231,7 @@
                 android:layout_height="33dp"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/transparent_box"
+                android:background="@drawable/circle"
                 android:entries="@array/year"
                 android:padding="5dp" />
         </LinearLayout>
@@ -257,7 +257,7 @@
             android:layout_height="33dp"
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
-            android:background="@drawable/transparent_box"
+            android:background="@drawable/circle"
             android:entries="@array/religion"
             android:padding="5dp" />
 
@@ -281,7 +281,7 @@
             android:layout_height="33dp"
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
-            android:background="@drawable/transparent_box"
+            android:background="@drawable/circle"
             android:padding="5dp" />
 
         <Button

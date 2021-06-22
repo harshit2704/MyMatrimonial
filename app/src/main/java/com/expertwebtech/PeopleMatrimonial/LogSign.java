@@ -49,8 +49,5 @@ public class LogSign extends AppCompatActivity {
 
 
 
-    public void onBackPressed() {
-        super.onBackPressed();
-        finishAffinity();
-    }
+
 }

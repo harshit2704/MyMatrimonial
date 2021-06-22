@@ -17,7 +17,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,12 +51,12 @@
 
         <EditText
             android:id="@+id/et_name"
+            android:background="@drawable/circle"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/transparent_box"
             android:fontFamily="@font/roboto_regular"
             android:hint="@string/your_name"
             android:inputType="textPersonName"
@@ -66,12 +66,12 @@
 
         <EditText
             android:id="@+id/et_email"
+            android:background="@drawable/circle"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/transparent_box"
             android:fontFamily="@font/roboto_regular"
             android:hint="@string/e_mail"
             android:inputType="textEmailAddress"
@@ -81,12 +81,12 @@
 
         <EditText
             android:id="@+id/et_password"
+            android:background="@drawable/circle"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/transparent_box"
             android:fontFamily="@font/roboto_regular"
             android:hint="@string/password"
             android:inputType="textPassword"
@@ -97,10 +97,10 @@
         <EditText
             android:id="@+id/et_repassword"
             android:layout_width="match_parent"
+            android:background="@drawable/circle"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="@drawable/transparent_box"
             android:fontFamily="@font/roboto_regular"
             android:hint="@string/re_type_password"
             android:inputType="textPassword"

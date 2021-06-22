@@ -25,4 +25,5 @@ public class LogIn extends Fragment {
 
         return view;
     }
+
 }
